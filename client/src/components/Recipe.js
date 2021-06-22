@@ -69,7 +69,7 @@ export function Recipe(props) {
 
 function mapStateToProps(state) {
     return {
-    //   favMovies: state.movies,//el buscador solo se suscribe a moviesLoaded del store
+    
     recipeDetail: state.recipeDetail,
     };
 };

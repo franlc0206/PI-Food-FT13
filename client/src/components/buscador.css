@@ -11,7 +11,7 @@ body {
 }
 .top {
   background:
-  url('https://fondosmil.com/fondo/35731.jpg'),
+  url('https://image.freepik.com/vector-gratis/icono-fondo-utensilios-cocina-burbujas_24911-30498.jpg'),
  rgba(0, 0, 0, 0.397);
   background-blend-mode:saturation;
   background-position: 0 -200px;
@@ -95,8 +95,8 @@ body {
   width: 180px;
   margin-top: 5px;
   margin-bottom: 5px;
-  -webkit-box-shadow: 0px 0px 2px 1px rgba(255,240,0,0.62); 
-  box-shadow: 0px 0px 2px 1px rgba(255,240,0,0.62);
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(240, 158, 158, 0.62); 
+  box-shadow: 0px 0px 2px 1px rgba(230, 95, 95, 0.62);
 }
 .recetascontent {
   display: flex;
@@ -123,7 +123,7 @@ body {
 }
 
 .filteredBy {
-  color: rgb(255, 210, 11);
+  color: rgb(255, 27, 11);
   font-family: 'Helvetica', cursive;
   margin-bottom: 1vh;
   margin-top: 1vh;
@@ -184,14 +184,14 @@ body {
 }
 
 .dietButton {
-  background-color:rgb(255, 229, 111);
+  background-color:rgb(214, 213, 205);
   outline: none;
-  border: none;
-  padding: 3px;
+  border: 2px solid #AD3238;
+  padding: 4px;
   font-size: 15px;
 }
 .dietButton:hover {
-  background-color:rgb(255, 241, 180);
+  background-color:rgb(197, 111, 111);
   cursor: pointer;
 }
 .dietButton:focus {
@@ -202,7 +202,7 @@ body {
   background: rgba(255, 255, 255, 0.459);
   border-radius:  15px;
   border: 3px solid #AD3238;
-  color: white;
+  color: rgb(5, 5, 5);
   font-size: 14px;
   height: 35px;
   padding: 5px;
@@ -213,7 +213,7 @@ body {
   background: rgba(255, 255, 255, 0.459);
   border-radius:  15px;
   border: 3px solid #AD3238;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 14px;
   height: 35px;
   padding: 5px;
@@ -226,11 +226,11 @@ body {
   color: rgb(255, 255, 255);
   padding: 5px;
   -webkit-box-shadow: 0px 0px 0px 1px #FFFFFF; 
-  box-shadow: 0px 0px 0px 1px #FFFFFF;
+  box-shadow: 0px 0px 0px 2px red;
   border-radius: 8px;
 }
 .linkPost:hover {
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(255,255,255,0); 
-  box-shadow: 0px 0px 0px 1px rgba(255,255,255,0);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(173, 28, 28, 0.425); 
+  box-shadow: 0px 0px 0px 1px rgba(230, 101, 101, 0.486);
   cursor: pointer;
 }

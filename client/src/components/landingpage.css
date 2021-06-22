@@ -35,8 +35,10 @@ a:focus-visible {
   font-family: 'Roboto', serif;
   color: rgba(255, 218, 9, 0.753);
   position: relative;
+  padding-left: 2%;
   margin-bottom: 10vh;
   margin-top: 10vh;
+  font-size: 150%;
 }
 .Subtitle {
   color: rgb(255, 210, 11);

@@ -25,79 +25,11 @@ const data = async () => {
 
         return aux;
 
-        // EX SETEO DE INSTRUCTIONS
-        // let instructions='', nueva;
-        // if (elem.analyzedInstructions[0]) {      
-        //     nueva = elem.analyzedInstructions[0].steps;
-        //     // console.log(nueva);
-        //     for (let i = 0; i < nueva.length; i++){
-        //         instructions+=nueva[i].step + ' ';
-        //     };
-          
-        // } else {
-        //     instructions = null;
-        // };
-               
-        // return {
-            // title: elem.title,
-            // summary: elem.summary,
-            // spoonacularScore: elem.spoonacularScore,
-            // healthScore: elem.healthScore,
-            // instructions: instructions,
-            // APId: elem.id,
-            // diets: elem.diets,
-            // image: elem.image,
-            // dishTypes: elem.dishTypes,
-        // };
-
 };
 
-//[ ] GET /recipes?name="..."
+// recipes?name
 router.get('/', async function(req, res) {
-    
-    // EX PARA CARGAR LA BD CON LOS DATOS DE LA API
-    // let datas = await data() 
-    // // console.log(datas[0])
-    // ITERO
-    // for (let i = 0; i < datas.length; i++) {   
-    //     const dataRecipes = await Recipe.findOrCreate({ //devuelve un array
-    //         where: {
-    //           name: element.title,
-    //           summary: element.summary,
-    //           APId: element.id,                
-    //         },
-    //         defaults: {
-    //           spoonacularScore: element.spoonacularScore,
-    //           healthScore: element.healthScore,
-    //           instructions: instructions,
-    //           image: element.image,
-    //         }            
-    //     });
-    //     // dataRecipes.map((data,i) => { data.setDiets()})
-    //     let seting=[]
-    //     const typeDB = await Diet.findAll({
-    //         where: {
-    //           name: {
-    //             [Sequelize.Op.in]: element.diets,
-    //           },
-    //         },
-    //     });
 
-    // SETEO VEGETARIAN CON LAS OTRAS
-    //     const veggie = await Diet.findAll({
-    //         where: {
-    //           name: 'vegetarian'
-    //         },
-    //     });
-    //     // console.log(typeDB)
-    //     typeDB.map((type) => {seting.push(type)});
-    //     if(element.vegetarian===true){veggie.map((veg) => seting.push(veg))}
-             
-    //     await dataRecipes[0].setDiets(seting);
-    // };
-    // res.send(datas)
-    
-    //PARA MOSTRAR LO NECESARIO
     if(req.query){
 
         try {
@@ -204,22 +136,6 @@ router.get('/:idReceta', async function(req, res){
         res.status(404).send()
     };
 
-    //EX SI ESTABA TODO EN LA MISMA BD
-    // const receta = await Recipe.findByPk(pk);
-    // if(pk<=100){
-        
-    //     const id = receta.APId;
-    //     console.log(id);
-    //     const datazo = async () => {
-    //         const d = await axios.get(`https://api.spoonacular.com/recipes/${id}/information?apiKey=4e21f6212dc54853a6d2c0fbc416816d`);
-    //         return d.data;       
-    //     };
-    //     let datazos = await datazo();
-    //     res.json(datazos);
-
-    // }else{
-    //     res.json(receta);
-    // }
 });
 
 module.exports = router;

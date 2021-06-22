@@ -5,8 +5,8 @@
     flex-direction: column;
     align-items: center; 
     justify-content:flex-end ; 
-    background: url('https://images.pexels.com/photos/3987293/pexels-photo-3987293.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'),
-    rgba(255, 255, 255, 0.418);
+    background: url('https://s1.1zoom.me/big0/365/Seafoods_Crayfish_Lime_Gray_background_Salt_587420_1365x1024.jpg'),
+    rgba(229, 241, 241, 0.418);
     background-blend-mode:lighten;
     background-repeat:no-repeat;
     width: 100%;
@@ -80,12 +80,12 @@
     width: 100%;
 }
 .spoonacularScore {
-    background-color: rgba(255,240,0,0.62);
+    background-color: rgba(73, 233, 94, 0.62);
     padding: 5px;
     border-radius: 4px;
 }
 .healthScore {
-    background-color: rgba(255,240,0,0.62);
+    background-color: rgba(73, 233, 94, 0.62);
     padding: 5px;
     border-radius: 4px;
 }
@@ -96,7 +96,7 @@
 .bottom {
     display: flex;
     flex-direction: row;
-    background-color: rgba(255, 210, 11, 0.692);
+    background-color: rgba(115, 230, 245, 0.62);
     width: 100%;
     margin-top: 50px;
     border-radius: 10px;

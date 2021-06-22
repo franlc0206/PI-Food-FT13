@@ -15,7 +15,7 @@ export default function LandingPage() {
             <div className="Subtitle">
             </div>
             <div className="list">
-                <NavLink to='/home' className='button1'>start searching</NavLink>          
+                <NavLink to='/home' className='button1'>Start searching</NavLink>          
             </div>
 
         </div>

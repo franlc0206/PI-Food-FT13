@@ -115,13 +115,23 @@ export function Buscador(props) {
 
       </div>
       </nav>
+      <div className='dietButtons'>
+
+{props.diets && props.diets.map((diet) =>(
+  <button className='dietButton' onClick={(event)=>handleClick(diet.name, event)}>{diet.name}</button>
+))
+}
+
+</div>
       {/* -------------------- */}
       <div className='filteredBy'>Filtered by: {props.filtered}</div>
       {props.recipes.error
-        ?(<div className='errors'>{props.recipes.error}</div>)                          
+        ?(<div className='errors'>{props.recipes.error}</div>) 
+                                 
       :(
+        
       <ul className='ul'> 
-        {/* Aqui tienes que escribir tu codigo para mostrar la lista de peliculas */
+        {
         currentPost && currentPost.map((recipe)=> (
         <li className='li' key={recipe.id}>
 
@@ -154,14 +164,7 @@ export function Buscador(props) {
 
       {loading[0]?<div>{loading}</div>:null}
 
-      <div className='dietButtons'>
-
-        {props.diets && props.diets.map((diet) =>(
-          <button className='dietButton' onClick={(event)=>handleClick(diet.name, event)}>{diet.name}</button>
-        ))
-        }
-      
-      </div>
+     
       <Paginado
       postsPerPage={postsPerPage}
       totalPosts={props.recipes.length} 

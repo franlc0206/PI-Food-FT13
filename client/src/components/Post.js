@@ -76,7 +76,7 @@ export function Post(props) {
   }, [])
     return (
       <div className='backgroundform'>
-        <div className='createurown'>Creating Your Own Recipe!</div>
+        <div className='createurown'>Create your recipe!</div>
       <form className='recipeform'onSubmit={(e)=>handleSubmit(e)}>
         <NavLink to='/home'  className='botonx'><button className='x'>X</button></NavLink>
       <div className='packageinput'>

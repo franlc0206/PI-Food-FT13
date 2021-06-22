@@ -44,7 +44,7 @@ router.post('/recipe', async (req,res) => {
     const dietsDB = await Diet.findAll({
         where: {
           name: {
-            [Sequelize.Op.in]: diets,//operador que el nombre coincida con el array
+            [Sequelize.Op.in]: diets,//operador 
           },
         },
     });
